@@ -1,0 +1,42 @@
+body{
+    background-color: black;
+    color:white;
+}    
+
+li{
+    color: white;
+}
+
+.Content{
+    list-style: none;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.MovieImage{
+    border-radius: 10px;
+    background-color: azure;
+}
+
+.MovieGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 230px);
+    gap: 40px;
+    padding: 40px;
+    justify-content: center;
+}
+
+@media (max-width: 560px){
+    .MovieGrid{
+        grid-template-columns: 100%;
+    }
+    .MovieImage{
+        width: 90%;
+        height: auto;
+    }
+}
+
+.title{
+    font-size: 3rem;
+    text-align: center;
+}
